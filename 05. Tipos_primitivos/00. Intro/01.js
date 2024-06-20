@@ -34,7 +34,10 @@
     Se queremos comprobar calquera tipo estrutural derivado de Object,
     non ten sentido usar typeof para iso, xa que sempre recibiremos "obxecto".
     A forma correcta de comprobar que tipo de obxecto estamos a usar é a palabra clave instanceof.
-
+    
+    IMPORTANTE:
+        As variables de tipo primitivo, almacenan na súa ubicación de memoria, o valor da variable.
+        Os resto, obxectos, almacenan na súa ubicación a posición de memoria que aloxa ao obxecto.
 */
 
 /*
