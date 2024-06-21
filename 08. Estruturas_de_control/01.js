@@ -126,7 +126,7 @@ for (modulo in modulos) {
     console.log(modulo);
 }
 
-console.log("\nbucle for of sobr obxecto modulos: ");
+console.log("\nbucle for of sobre obxecto modulos: ");
 for (modulo of modulos) {
     console.log(modulo);
 }
