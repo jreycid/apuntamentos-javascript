@@ -1,7 +1,0 @@
-https://developer.mozilla.org/es/docs/Glossary/Primitive
-
-https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures
-
-https://www.escuelafrontend.com/tipos-primitivos-en-javascript
-
-https://javascript.com.es/que-son-los-tipos-primitivos
