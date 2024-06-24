@@ -14,9 +14,9 @@
     Poden ser anónimas (non ter nome)
  */
 
-// Definición
+// Función declarativa, necista ser invocada.
 function holaMundo() {
-    console.log('\nOla Mundo!');
+    console.log("\nOla Mundo!");
 }
 // Chamada
 holaMundo();
@@ -26,28 +26,29 @@ holaMundo();
     momento da chamada, colle o valor co que
     iniciamos a vble na cabeceira da función.
  */
-function saudar(nome = 'Xavier') {
+function saudar(nome = "Xavier") {
     return `Ola ${nome}`;
 }
 
 console.log(saudar());
-console.log(saudar('Xoan'));
+console.log(saudar("Xoan"));
 
 /*
     Parámetros vs argumentos
  */
-console.log('\nParámetros vs argumentos: ');
+console.log("\nParámetros vs argumentos: ");
 
-function sumaTresNum(a, b, c) { // <-- Parametros
+function sumaTresNum(a, b, c) {
+    // <-- Parametros
     console.log(arguments);
     return a + b + c;
 }
 
 let resultado = sumaTresNum(5, 6, 1); // <-- Argumentos
 console.log(resultado);
-console.log('En JavaScrip as funcións son de tipo:', typeof sumaTresNum);
+console.log("En JavaScrip as funcións son de tipo:", typeof sumaTresNum);
 
-console.log('\nSuma sen parámetros: ');
+console.log("\nSuma sen parámetros: ");
 
 function sumaSenParam() {
     let a = 1,
@@ -66,7 +67,7 @@ sumaSenParam();
 
 let a = 1,
     b = 2;
-console.log('\nSuma con parámetros: ', a, b);
+console.log("\nSuma con parámetros: ", a, b);
 
 function sumaConParam(a, b) {
     console.log(a + b);
@@ -80,7 +81,7 @@ let obx = {
     a: 1,
     b: 2,
 };
-console.log('\nSuma con obxecto: ', obx.a, obx.b);
+console.log("\nSuma con obxecto: ", obx.a, obx.b);
 
 function sumaObx(obx) {
     console.log(obx.a + obx.b);
@@ -95,14 +96,15 @@ console.log(obx.a, obx.b);
     pódense manipular e transmitir como calquera outro obxecto.
     En concreto, son obxectos Function.
 
-    Tamén se poden definir función sen nome, chamadas función anónimas
+    As funcións que almacenamos en variables, chámanse funcións expresivas.
+    Poden ter nome ou ser anónimas.
  */
-let saudoFuncAnonima = function (name = 'Mundo!') {
+let saudoFuncAnonima = function (name = "Mundo!") {
     return `Ola ${name}`;
 };
-console.log('\nFunción anónimas:');
+console.log("\nFunción anónimas:");
 console.log(saudoFuncAnonima());
-console.log(saudoFuncAnonima('Cristina'));
+console.log(saudoFuncAnonima("Cristina"));
 
 /*
     FUNCIÓNS FRECHA / ARROW FUNCTIONS
@@ -118,9 +120,9 @@ let saudoFuncFrecha1 = (name) => `Ola ${name}`;
 let saudoFuncFrecha2 = (name) => {
     return `Bye ${name}`;
 };
-console.log('\nFunción frecha:');
-console.log(saudoFuncFrecha1('Uxío'));
-console.log(saudoFuncFrecha2('Olalla'));
+console.log("\nFunción frecha:");
+console.log(saudoFuncFrecha1("Uxío"));
+console.log(saudoFuncFrecha2("Olalla"));
 
 /*
     Estes son conceptos básicos sobre funcións en JavaScript.
