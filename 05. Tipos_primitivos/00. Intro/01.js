@@ -10,8 +10,7 @@
             5. Booleano: typeof instance === "boolean"
             6. Indefinido: typeof instance === "undefined"
 
-        Adicionalmente existe un tipo adicional,
-        que se podería considerar primitivo:
+        Existe un tipo adicional, que se podería considerar primitivo:
 
             7. Nulo: typeof instance === "object".
                 
