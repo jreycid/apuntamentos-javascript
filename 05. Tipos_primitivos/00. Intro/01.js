@@ -21,7 +21,7 @@
         de tipo primitivo que xa ten asignado un valor, se lle intenta 
         asignar outro valor, o que fai javascript é crear unha nova instancia da variable.
             
-        En Javascript, toda variable ou constante quee non pertence a un tipo primitivo,
+        En Javascript, toda variable ou constante que non pertence a un tipo primitivo,
         é un obxecto, incluso as funcións son obxectos e como tal poden tratarse.
 
             8. Obxecto: typeof instance === "object". (Exemplo: Array, Map, Date, etc.)
@@ -33,10 +33,10 @@
     Se queremos comprobar calquera tipo estrutural derivado de Object,
     non ten sentido usar typeof para iso, xa que sempre recibiremos "obxecto".
     A forma correcta de comprobar que tipo de obxecto estamos a usar é a palabra clave instanceof.
-    
+
     IMPORTANTE:
         As variables de tipo primitivo, almacenan na súa ubicación de memoria, o valor da variable.
-        Os resto, obxectos, almacenan na súa ubicación a posición de memoria que aloxa ao obxecto.
+        Os resto, obxectos, almacenan na súa ubicación, a posición de memoria que aloxa ao obxecto.
 */
 
 /*
@@ -49,12 +49,32 @@
     definido no prototipo relacionado co primitivo en cuestión.
 
 */
-    let saudo = 'Ola frontenders!';
+let saudo = "Ola!";
 
-    console.log(saudo);
-    console.log(saudo.toUpperCase);
+console.log(saudo);
+console.log(saudo.toUpperCase());
 
 // No exemplo anterior, o método toUpperCase defínese no prototipo String,
 // que está relacionado co valor primitivo 'saúdo'.
 // No momento en que chamas ao método prototipo, o motor JavaScript encapsula o valor do primitivo,
 // executa a función e destrúe este obxecto usado.
+
+/*
+    Inmutabilidade
+ */
+
+// O uso dun método de cadena non modifica a cadena
+let cadea = "cadea";
+console.log(cadea); // cadea
+cadea.toUpperCase();
+console.log(cadea); // cadea
+
+// A asignación dalle o primitivo un novo valor (non o muta)
+cadea = cadea.toUpperCase();
+console.log(cadea); // CADEA
+
+// O uso dun método de array muta o array
+let arreglo = [];
+console.log(arreglo); // []
+arreglo.push("cadea");
+console.log(arreglo); // ["cadea"]
