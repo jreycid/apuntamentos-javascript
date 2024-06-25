@@ -1,17 +1,24 @@
 /*
-    Unha función e ún bloque de código que leva a cabo unha tarefa.
-    As vbles definidas dentro dunha función, teñen como scope a dita función.
+    Definición:
 
-    Dentro dunha función poderemos acceder a vbles globales.
+        Bloque de código que leva a cabo unha tarefa.
 
-    Poden recibir parámetros, ainda que non é obrigatorio
-    Poden retornar valores, ainda que non é obrigatorio
+    Características:
 
-    Deben levar a cabo unha única tarefa
+        As vbles definidas dentro dunha función,
+        teñen como scope a dita función.
 
-    Necesitan ser invocadas para executarse
+        Dentro dunha función poderemos acceder a vbles globales.
 
-    Poden ser anónimas (non ter nome)
+        Poden recibir parámetros, ainda que non é obrigatorio
+    
+        Poden retornar valores, ainda que non é obrigatorio
+
+        Deben levar a cabo unha única tarefa
+
+        Necesitan ser invocadas para executarse
+
+        Poden ser anónimas (non ter nome)
  */
 
 // Función declarativa, necista ser invocada.
@@ -96,6 +103,12 @@ console.log(obx.a, obx.b);
     pódense manipular e transmitir como calquera outro obxecto.
     En concreto, son obxectos Function.
 
+    Ademais, as funcións son consideradas obxectos de primeira clase.
+    Isto significa que as funcións:
+        Poden ser asignadas a variables
+        Poden pasarse como argumentos a outras funcións
+        Poden aparecer en sentencias return
+
     As funcións que almacenamos en variables, chámanse funcións expresivas.
     Poden ter nome ou ser anónimas.
  */
@@ -110,7 +123,7 @@ console.log(saudoFuncAnonima("Cristina"));
     FUNCIÓNS FRECHA / ARROW FUNCTIONS
 
     Non teñen nome
-    Sintáxis reducida e mantemento do scope
+    Sintaxe reducida e mantemento do scope
     Non empregan (obrigatoriamente) corchetes nin a palabra reservada return
     Empregan this
 
