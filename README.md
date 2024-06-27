@@ -37,6 +37,8 @@ Outras webs
 
 [Learn JavaScript Online](https://learnjavascript.online/)
 
+[Eloquent JavaScript 4ª edición (2024)](https://eloquent-javascript-es.vercel.app/)
+
 [The Odin Project - JavaScript Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
 
 [Manz.dev JavaScript](https://lenguajejs.com/javascript/)
