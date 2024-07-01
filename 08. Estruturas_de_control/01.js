@@ -121,13 +121,13 @@ modulos = [
     },
 ];
 
-console.log("\nbucle for in sobre obxecto modulos: ");
-for (modulo in modulos) {
+console.log("\nbucle for in sobre array de obxetos modulo: ");
+for (var modulo in modulos) {
     console.log(modulo);
 }
 
-console.log("\nbucle for of sobre obxecto modulos: ");
-for (modulo of modulos) {
+console.log("\nbucle for of sobre array de obxetos modulo: ");
+for (var modulo of modulos) {
     console.log(modulo);
 }
 
@@ -138,5 +138,5 @@ try {
 } catch (ex) {
     console.log("Erro detectado: " + ex.description);
 } finally {
-    console.log("faino de todas formas");
+    console.log("O finnally faise de todas formas\n");
 }
