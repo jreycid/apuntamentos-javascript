@@ -1,0 +1,4 @@
+/*
+    Atopa todas as ocurrencias dun elemento
+    nun array
+ */
