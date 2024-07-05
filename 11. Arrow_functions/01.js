@@ -12,7 +12,7 @@
 */
 
 /* Función tradicional  */
-function test (a){
+function test(a) {
     return a + 100;
 }
 
@@ -21,48 +21,43 @@ function test (a){
 // 1. Elimina a palabra "function" e coloca a frecha entre o argumento e o corchete de apertura.
 (a) => {
     return a + 100;
-}
+};
 
 // 2. Quita os corchetes do cuerpo e a palabra "return" — elo return está implícito.
 (a) => a + 100;
 
 // 3. Suprime los paréntesis dos argumentos
-a => a + 100;
+(a) => a + 100;
 
 /* 
     Exemplo 1 
 */
 
 // Función tradicional
-function bob (a){
+function bob(a) {
     return a + 100;
 }
 
 // Función flecha
-bob = a => a + 100;
+bob = (a) => a + 100;
 
 /* 
     Exemplo 2 
 */
-const materiais = [
-    'Hidróxeno',
-    'Uranio',
-    'Litio',
-    'Carbono'
-];
+const materiais = ["Hidróxeno", "Uranio", "Litio", "Carbono"];
 
-console.log(materiais.map(materiais => materiais.length));
+console.log(materiais.map((materiais) => materiais.length));
 
 /* 
     Exemplo 3 
 */
 
 //En ES5:
-['a', 2, 'c', 4].forEach(function(v) {
+["a", 2, "c", 4].forEach(function (v) {
     return console.log(v);
 });
 //A partir de ES6, coa chegada das funcións frecha:
-['a', 2, 'c', 4].forEach(v => console.log(v));
+["a", 2, "c", 4].forEach((v) => console.log(v));
 
 /* 
     Exemplo 4 
@@ -72,7 +67,7 @@ console.log(materiais.map(materiais => materiais.length));
 */
 
 // Función tradicional con varios argumentos
-function bob (a, b){
+function bob(a, b) {
     return a + b + 100;
 }
 // Función flecha con varios argumentos
@@ -81,7 +76,7 @@ function bob (a, b){
 // Función tradicional sen argumentos
 let a = 4;
 let b = 2;
-function bob (){
+function bob() {
     return a + b + 100;
 }
 // Función flecha sen argumentos
@@ -97,7 +92,7 @@ b = 2;
 */
 
 // Función tradicional
-function bob (a, b){
+function bob(a, b) {
     let chuck = 42;
     return a + b + chuck;
 }
@@ -106,13 +101,13 @@ function bob (a, b){
 (a, b) => {
     let chuck = 42;
     return a + b + chuck;
-}
+};
 
 /* 
     Exemplo 6
 */
 // Función tradicional
-const concatenarTradicional = function(arr1, arr2) {
+const concatenarTradicional = function (arr1, arr2) {
     return arr1.concat(arr2);
 };
 console.log(concatenarTradicional([1, 2], [3, 4, 5]));
@@ -120,3 +115,23 @@ console.log(concatenarTradicional([1, 2], [3, 4, 5]));
 // Función frecha
 const concatenarFrecha = (arr1, arr2) => arr1.concat(arr2);
 console.log(concatenarFrecha([1, 2], [3, 4, 5]));
+
+/*
+    Exemplo 7: Devolver un obxecto con unha arrow function
+
+    Se quero devolver o obxecto directamente sen o return,
+    necesito engadir os ()
+*/
+var profesor = (nome) => ({
+    nome,
+    idade: 39,
+    modulo: BD,
+});
+
+var profesor = (nome) => {
+    return {
+        nome,
+        idade: 39,
+        modulo: BD,
+    };
+};
