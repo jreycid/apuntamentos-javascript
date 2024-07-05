@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Validación de Código Postal</title>
+    </head>
+    <body>
+        <input id="cod" type="text" placeholder="Código Postal" />
+        <input id="val" type="button" value="Validar" />
+        <script>
+            function validarCP() {
+                return /^[0-9]{4,5}$/.test(
+                    document.getElementById("cod").value
+                );
+            }
+
+            document
+                .getElementById("val")
+                .addEventListener("click", function () {
+                    if (validarCP()) alert("Código Postal CORRECTO");
+                    else alert("Código Postal NO VÁLIDO");
+                });
+        </script>
+    </body>
+</html>

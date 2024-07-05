@@ -1,0 +1,80 @@
+:root {
+    --white: #fff;
+    --black: #000;
+
+    /* Primary colors*/
+    --primary-1: #2b8379;
+    --primary-2: #19a596;
+    --primary-3: #7fd1c7;
+    --primary-4: #7fd1c7;
+    --primary-5: #d0f3ef;
+
+    /* Neutral colors */
+    --neutral-1: #2c2c2c;
+    --neutral-2: #434343;
+    --neutral-3: #94868b;
+    --neutral-4: #d9cfd3;
+    --neutral-5: #f2ecee;
+
+    /* Accent-blue colors */
+    --accent-1: #970e3d;
+    --accent-2: #c43464;
+    --accent-3: #de7699;
+    --accent-4: #e6c3ce;
+    --accent-5: #fff2f7;
+}
+
+body {
+    background-color: var(--neutral-5);
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+p {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.label {
+    display: block;
+    font-weight: 500;
+}
+
+.input {
+    font-size: 16px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding: 0.75em 0.5em;
+    min-width: 200px;
+    border: none;
+    border-left: 7px solid var(--neutral-4);
+    transition: border-left-color 160ms;
+    background-color: white;
+    width: 100%;
+}
+
+::placeholder {
+    color: var(--neutral-3);
+}
+
+input:not(.btn):focus {
+    outline: none;
+    border-left: 7px solid var(--primary-1);
+}
+
+.navbar {
+    background-color: var(--accent-4);
+    padding: 10px;
+    margin-bottom: 20px;
+}
