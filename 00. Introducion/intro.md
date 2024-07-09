@@ -4,9 +4,11 @@
 
 JavaScript foi inventado por Brendan Eich en 1995, e **converteuse en un estándar ECMA en 1997**.
 
-**ECMA-262** é o nome oficial da norma. ECMAScript é o nome oficial da lenguaje, do cal JavaScrip considérase dialecto.
+**ECMA-262** é o nome oficial da norma. **ECMAScript** é o nome oficial da lenguaje, do cal **JavaScript** considérase dialecto.
 
 Defínese como un linguaxe multiparadigma, baseado en prototipos, mono fío, con funcións de primeira clase, débilmente tipificado e dinámico.
+
+Hoxe en día, emprégase JavaScript tanto para o desenvolvemento no lado do cliente coma no servidor.
 
 ## Ediciones de ECMAScript
 
