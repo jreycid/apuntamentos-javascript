@@ -33,7 +33,7 @@ prefixos.set(982, "Pontevedra");
 // get(clave): devolve o valor asociado á clave ou undefined se a clave non existe no map
 console.log(prefixos.get(986));
 
-// size: tamaño do Map
+// size: tamaño do map
 console.log(prefixos.size);
 
 // has(clave): devolve true se a clave existe no map, false se non existe
@@ -56,19 +56,19 @@ prefixos.set(986, "Lugo");
 prefixos.set(988, "Ourense");
 prefixos.set(982, "Pontevedra");
 
-// keys: devolve un iterable coas claves do mapa ordenadas
+// keys(): devolve un iterable coas claves do mapa ordenadas
 let itClaves = prefixos.keys();
 for (let itClave of itClaves) {
     console.log(itClave);
 }
 
-// values: devolve un iterable cos valores do mapa ordenados
+// values(): devolve un iterable cos valores do mapa ordenados
 let itValores = prefixos.values();
 for (let itValor of itValores) {
     console.log(itValor);
 }
 
-// entries: devolve un iterable cos pares clave-valor do mapa ordenadas
+// entries(): devolve un iterable cos pares clave-valor do mapa ordenadas
 let itPares = prefixos.entries();
 for (let itPar of itPares) {
     console.log(itPar);
