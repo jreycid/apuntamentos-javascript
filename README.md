@@ -28,7 +28,7 @@ Repositorios
 
 [TheOdinProject - javascript-exercises](https://github.com/TheOdinProject/javascript-exercises)
 
-Outras webs
+Documentación de referencia
 ---------------------
 
 [https://es.javascript.info/](https://es.javascript.info/)
