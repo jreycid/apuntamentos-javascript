@@ -13,23 +13,17 @@ Ligazóns de interese
 Documentación de referencia
 ---------------------
 
-[https://es.javascript.info/](https://es.javascript.info/)
-
 [MDN (Mozilla) JavaScript Reference](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
+
+[https://es.javascript.info/](https://es.javascript.info/)
 
 [Google Web Dev - JavaScript](https://web.dev/learn/javascript)
 
-[Exercism JavaScript - concepts](https://exercism.org/tracks/javascript/concepts)
-
-[Learn JavaScript Online](https://learnjavascript.online/)
-
 [Eloquent JavaScript 4ª edición (2024)](https://eloquent-javascript-es.vercel.app/)
 
-[The Odin Project - JavaScript Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
+[Aprende JavaScript (midudev)](https://www.aprendejavascript.dev/)
 
 [Manz.dev JavaScript](https://lenguajejs.com/javascript/)
-
-[Aprende JavaScript (midudev)](https://www.aprendejavascript.dev/)
 
 Exercicios
 ---------------------
