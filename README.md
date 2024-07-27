@@ -15,6 +15,8 @@ Exercicios
 
 [Programiz JavaScript Examples](https://www.programiz.com/javascript/examples)
 
+[Exercism JavaScript - exercices](https://exercism.org/tracks/javascript)
+
 Repositorios
 ---------------------
 
@@ -34,6 +36,8 @@ Outras webs
 [MDN (Mozilla) JavaScript Reference](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
 
 [Google Web Dev - JavaScript](https://web.dev/learn/javascript)
+
+[Exercism JavaScript - concepts](https://exercism.org/tracks/javascript/concepts)
 
 [Learn JavaScript Online](https://learnjavascript.online/)
 
