@@ -32,6 +32,8 @@ Exercicios
 
 [Exercism JavaScript - exercices](https://exercism.org/tracks/javascript)
 
+[Retos de Programación 2024 - mouredev](https://retosdeprogramacion.com/roadmap)
+
 Repositorios
 ---------------------
 
