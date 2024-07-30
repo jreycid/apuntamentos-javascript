@@ -1,0 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+img {
+  max-width: 400px;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  margin-top: 15px;
+}
