@@ -25,11 +25,13 @@ Documentación de referencia
 Exercicios
 ---------------------
 
+* [Exercism JavaScript - exercices](https://exercism.org/tracks/javascript)
+  
 * [Programiz JavaScript Examples](https://www.programiz.com/javascript/examples)
 
-* [Exercism JavaScript - exercices](https://exercism.org/tracks/javascript)
-
 * [Retos de Programación 2024 - mouredev](https://retosdeprogramacion.com/roadmap)
+
+* [https://adventjs.dev/es - midudev](https://adventjs.dev/es)
 
 Ligazóns de interese
 ---------------------
