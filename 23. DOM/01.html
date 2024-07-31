@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exemplo de uso do DOM</title>
+        <style>
+            #id_de_proba {
+                color: blueviolet;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="encabezado">Exemplo de uso do DOM</h1>
+
+        <p>Paragrafo da páxina de exemplo</p>
+
+        <script tyoe="text/Javascript">
+            var encabezado = document.getElementById("encabezado");
+            console.log(encabezado);
+            /* O encabezado tamén e un obxecto, e como tal dispón dunha serie de métodos, por exemplo: */
+            console.log(encabezado.innerHTML);
+
+            /* Tamén podemos acceder a nodos do noso HTML mediante o tag */
+            var paragrafo = document.getElementsByTagName("p");
+            console.log(paragrafo);
+            /*
+            O log anterior, devólvenos un obxecto de tipo array.
+            Ábreo co inspector de código do navegador e investiga o seu contido.
+            Define mais elementos <p> neste arquivo HTML e comproba o comproba de novo o log.
+            */
+
+            /* Agora imos a asignarlle un id o noso paragrafo */
+            paragrafo[0].id = "id_de_proba";
+            /* Recarga a páxina e comproba si se aplicou o estilo */
+            /* Tamén podemos modificar estilos dos nosos nodos mediante JS */
+            paragrafo[0].style.backgroundColor = "yellow";
+
+            //manipulación de estilos, cambio de font-family
+            document.getElementById("encabezado").style.fontFamily = "cursive";
+        </script>
+    </body>
+</html>

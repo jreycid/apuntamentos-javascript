@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DOM - Navegación polo documento</title>
+        <style>
+            /* O font-size dos h2 é de 1,5em e o dos h1 é de 2em */
+            h2:hover {
+                font-size: 1.65em;
+                color: purple;
+            }
+            #texto {
+                color: purple;
+            }
+        </style>
+        <script>
+            window.addEventListener("load", inicio);
+
+            function inicio() {
+                for (
+                    let i = 0;
+                    i < document.getElementsByTagName("h2").length;
+                    i++
+                ) {
+                    document
+                        .getElementsByTagName("h2")
+                        [i].addEventListener("mouseover", amosarInfo);
+                }
+                for (
+                    let i = 0;
+                    i < document.getElementsByTagName("h2").length;
+                    i++
+                ) {
+                    document
+                        .getElementsByTagName("h2")
+                        [i].addEventListener("mouseout", borrarInfo);
+                }
+            }
+            // Recibe como parámetro, o evento mouseover.
+            // Este evento, no atributo target, contén o elemento asociado.
+            function amosarInfo(e) {
+                let texto = "";
+                let h2 = e.target;
+                texto += "Escolliches " + h2.textContent;
+
+                // Seleccionamos o pai
+                let pai = h2.parentElement;
+                texto += " que está situada no " + pai.id + "<br/>";
+
+                // Seleccionamos o irmán
+                let ul = h2.nextElementSibling;
+                /*
+                Non utilizamos nextSibling porque inclúe nodos de tipo texto;
+                neste caso, devolveríanos o br que hai entre o h2 e o ul.
+
+                let ul = h2.nextSibling;
+            */
+
+                //Amosar o número de fillos
+                //¡OLLO! .childNodes inclúe texto e comentarios; children no.
+                texto +=
+                    "O número de provincias é " + ul.children.length + ": ";
+
+                let fillo = ul.firstChild;
+                while (fillo != null) {
+                    texto += " " + fillo.textContent;
+                    fillo = fillo.nextElementSibling;
+                }
+
+                //Mostramos o texto
+                document.getElementById("texto").innerHTML = texto;
+                //Se poñemos .textContent amosariamos texto plano, e non colle etiquetas html.
+            }
+            // Recibe como parámetro, o evento mouseout.
+            // Este evento, no atributo target, contén o elemento asociado.
+            function borrarInfo() {
+                let pai = document.getElementById("texto");
+                pai.innerHTML = "";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="noroeste">
+            <h2>Galicia</h2>
+            <ul id="lista">
+                <li>A Coruña</li>
+                <li>Lugo</li>
+                <li>Ourense</li>
+                <li>Pontevedra</li>
+            </ul>
+        </div>
+        <div id="norte">
+            <h2>Euskadi</h2>
+            <ul id="lista">
+                <li>Álava</li>
+                <li>Guipúscoa</li>
+                <li>Biscaia</li>
+            </ul>
+        </div>
+        <div id="texto"></div>
+    </body>
+</html>

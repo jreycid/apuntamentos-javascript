@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DOM - Creacion, borrado e sustitucion de elementos</title>
+        <style>
+            .vermello {
+                color: red;
+            }
+        </style>
+        <script>
+            window.addEventListener("load", inicio);
+
+            function inicio() {
+                document
+                    .getElementById("crearParagrafo")
+                    .addEventListener("click", crearParagrafo);
+                document
+                    .getElementById("crearImaxe")
+                    .addEventListener("click", crearImaxe);
+                document
+                    .getElementById("borrarUltimo")
+                    .addEventListener("click", borrarUltimo);
+                document
+                    .getElementById("borrarPrimeiro")
+                    .addEventListener("click", borrarPrimeiro);
+                document
+                    .getElementById("SubstituirPrimeiro")
+                    .addEventListener("click", SubstituirPrimeiro);
+            }
+            // Crear elemento
+            function crearParagrafo() {
+                // Crear elemento
+                let paragrafo = document.createElement("p");
+                // Obter texto
+                let texto = document.createTextNode(
+                    document.getElementById("texto").value
+                );
+                // Engadir texto
+                paragrafo.appendChild(texto);
+                // Engadir atributos ao elemento
+                paragrafo.setAttribute("class", "vermello");
+                // Engadir elemento
+                var cont = document.getElementById("div1");
+                cont.appendChild(paragrafo);
+                document.getElementById("texto").value = "";
+            }
+
+            function crearImaxe() {
+                //Crear elemento
+                let imaxe = document.createElement("img");
+                //Engadir atributos
+                imaxe.setAttribute("src", prompt("Introduce a ruta"));
+                imaxe.setAttribute(
+                    "alt",
+                    prompt("Introduce o texto alternativo")
+                );
+                // Engadir elemento
+                let cont = document.getElementById("div1");
+                cont.appendChild(imaxe);
+            }
+
+            function borrarUltimo() {
+                let cont = document.getElementById("div1");
+                //Seleccionar o último fillo
+                let fillo = cont.lastChild; // pode ser p ou img
+                //Elimina un elemento fillo
+                cont.removeChild(fillo);
+            }
+
+            function borrarPrimeiro() {
+                let cont = document.getElementById("div1");
+                //Seleccionar o primeiro fillo
+                let fillo = cont.firstChild; // pode ser p ou img
+                //Elimina un elemento fillo
+                cont.removeChild(fillo);
+            }
+
+            function SubstituirPrimeiro() {
+                let cont = document.getElementById("div1");
+                let paragrafo = document.createElement("p");
+                let texto = document.createTextNode("Baleiro");
+                paragrafo.appendChild(texto);
+                cont.replaceChild(paragrafo, cont.firstChild); //Novo, antigo
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="div1"></div>
+        <br />
+        <textarea id="texto"></textarea>
+        <br />
+        <button id="crearParagrafo">Crear parágrafo</button>
+        <button id="crearImaxe">Crear imaxe</button>
+        <button id="borrarUltimo">Borrar último</button>
+        <button id="borrarPrimeiro">Borrar primeiro</button>
+        <button id="SubstituirPrimeiro">
+            Substituir primeiro parágrafo por baleiro
+        </button>
+    </body>
+</html>

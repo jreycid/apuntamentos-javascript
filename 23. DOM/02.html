@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DOM - Creación e modificación de elementos</title>
+        <meta charset="UTF-8" />
+        <style>
+            .vermello {
+                color: red;
+            }
+        </style>
+        <script>
+            // asegurar que non se executa o script ata que
+            // remate a carga do documento HTML
+            // Sempre hai que facer a creación de eventos desta maneira
+            window.addEventListener("load", inicio);
+
+            function inicio() {
+                document
+                    .getElementById("cambiarTextos")
+                    .addEventListener("click", cambiarTextos);
+                document
+                    .getElementById("cambiarClases")
+                    .addEventListener("click", cambiarClases);
+                document
+                    .getElementById("quitarClases")
+                    .addEventListener("click", quitarClases);
+            }
+            /*
+                A seguinte función presenta distintos métodos
+                para a selección de elementos do documento:
+
+                    1. document.getElementById
+                    2. document.getElementsByTagName
+                    3. document.getElementsByClassName
+                    4. document.querySelector
+                    5. document.querySelectorAll
+            */
+
+            function cambiarTextos() {
+                //Obtén UN ÚNICO elemento según o seu id
+                document.getElementById("parrafo1").innerHTML =
+                    "Primero parágrafo cambiado";
+                //Obtén TODOS os elementos según a súa etiqueta
+                document.getElementsByTagName("p")[1].innerHTML =
+                    "Segundo parágrafo cambiado";
+                //Obtén TODOS os elementos según a súa clase
+                document.getElementsByClassName("vermello")[0].innerHTML =
+                    "Terceiro parágrafo cambiado";
+
+                //Obtén O PRIMEIRO elemento co selector CSS indicado
+                document.querySelector("p.vermello");
+                //Obtén TODOS os elementos co selector CSS indicado
+                document.querySelectorAll("p.vermello")[0];
+
+                /*
+                    document.querySelector presenta algunha vantaxe
+                    importante respecto a document.getElementById:
+
+                        const title = document.querySelector('.main h1')
+
+                    Axúdanos a non abusar de ids innecesariamente,
+                    xa que o recibir como parámetro un selector CSS,
+                    é máis potente e flexible que document.getElementById.
+                */
+            }
+
+            function cambiarClases() {
+                document
+                    .getElementById("parrafo1")
+                    .setAttribute("class", "vermello");
+                document.getElementById("parrafo2").className = "vermello";
+            }
+
+            function quitarClases() {
+                for (
+                    let i = 0;
+                    i < document.getElementsByTagName("p").length;
+                    i++
+                ) {
+                    document
+                        .getElementsByTagName("p")
+                        [i].setAttribute("class", "");
+                    // document.getElementsByTagName("p")[i].className="";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <p id="parrafo1">Este é o primeiro parágrafo</p>
+            <p id="parrafo2">Este é o segundo parágrafo</p>
+            <p id="parrafo3" class="vermello">Este é o terceiro parágrafo</p>
+        </div>
+        <br />
+        <button id="cambiarTextos">Cambiar texto dos parágrafos</button>
+        <button id="cambiarClases">Cambiar clases dos parágrafos</button>
+        <button id="quitarClases">Quitar clases de todos os parágrafos</button>
+    </body>
+</html>

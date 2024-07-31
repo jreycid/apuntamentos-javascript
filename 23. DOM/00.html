@@ -1,0 +1,113 @@
+<!-- 
+    DOCUMENT OBJECT MODEL
+    ---------------------
+
+    -   DEFINICIÓN:
+
+        -   O DOM é a estructura de obxectos xerárquica con forma de árbore,
+            que xenera o navegador cando se carga un documento HTML.
+            Pódese alterar mediante JS para cambiar dinámicamente
+            os contidos e aspecto da páxina.
+
+            Hai tantos DOM commo documentos HTML, pero só hai unha API DOM,
+            que é unha especificación do W3C.
+            A API DOM está escrita en JavaScript e dispón dun conxunto de métodos
+            que permiten manipular o DOM dun documento web mediante JavaScript ou
+            outras linguaxes.
+
+            Segundo o Document Object Model (DOM), cada etiqueta HTML é un obxecto.
+            As etiquetas anidadas chámanse "fillos" da etiqueta que as contén.
+            O texto dentro dunha etiqueta tamén é un obxecto.
+
+            Todos estes obxectos son accesibles mediante JavaScript,
+            e podemos utilizalos para modificar a páxina.
+            Por exemplo, document.body é o obxecto que representa a etiqueta <body>.
+
+        -   Cada elemento do noso HTML convertirase nun nodo do DOM.
+            Esta conversión realizarase de forma xerárquica.
+
+        -   Nodo: cada un dos elementos do noso HTML.
+        -   Selector: emprégase para acceder os nodos a través do document.
+        -   Window: si o document fai referencia a todo o noso HTML, o window fai referencia a
+            toda a ventana do noso navegador, e como obxecto que é, ten un conxunto de atributos
+            e métodos que podemos empregar, tales como window.alert().
+        -   Document: é o nodo raíz e do que derivan todos os demais nodos da árbore.
+
+
+    -   TIPOS DE NODOS:
+
+            A especificación do DOM define 12 tipos de nodos,
+            ainda que xeralmente empréganse 4 ou 5 tipos de nodos:
+
+                1. Document: é o nodo raíz e do que derivan todos os demais nodos da árbore.
+                2. Element: representa cada unh das etiquetas XHTML.
+                    É o único nodo que pode conter atributos e o único do que poden derivar outros nodos.
+                3. Attr: representa aos atributos das etiquetas XHTML, é decir, un nodo por cada atributo=valor.
+                4. Text, é o nodo que contén o texto encerrado por unha etiqueta XHTML.
+                5. Comment, representa os comentarios incluídos na página XHTML.
+
+            Os outros tipos de nodos son:
+                6. CdataSection
+                7. DocumentFragment
+                8. DocumentType
+                9. EntityReference
+                10. Entity
+                11. Notation
+                12. ProcessingInstruction
+
+    API DOM
+    --------
+        -   ACCESO AOS NODOS:
+
+                Cando xa esté construida a árbore de nodos do DOM, isto é, cando
+                a páxina xa esté completamente cargada, podemos comezar a utilizar
+                as súas funcións para aceder a calquera nodo da árbore.
+                Isto equivale a aceder a un trozo do noso documento.
+                Unha vez feito isto, podemos modificar valores,
+                crear y engadir novos elementos, movelos de sitio, etc.
+
+                * document.getElementById(id)
+                * document.getElementsByClassName(nomes)
+                * document.getElementsByTagName(nome)
+                * document.querySelector(selectores)
+                * document.querySelectorAll(selectores)
+
+        -   OBTER NODOS FILLOS/PAIS/IRMÁNS:
+
+                * elementNodeReference.hasChildNodes()
+                * elementNodeReference.childNodes
+                * elementNodeReference.parentNode
+                * elementNodeReference.firstChild
+                * elementNodeReference.lastChild
+                * elementNodeReference.previousSibling
+                * elementNodeReference.nextSibling
+
+                * elementNodeReference.firstElementChild
+                * elementNodeReference.lastElementChild
+                * elementNodeReference.previousElementSibling
+                * elementNodeReference.nextElementSibling
+
+        -   CREAR DE ELEMENTOS:
+
+                * document.createElement()
+                * document.createTextNode()
+
+        -   ENGADIR ELEMENTOS:
+
+                * elementNodeReference.appendChild()
+                * elementNodeReference.insertBefore()
+
+        -   ELIMINAR ELEMENTOS:
+
+                * elementNodeReference.remove()
+                * parent.removeChild(child)
+
+        -   REEMPLAZAR ELEMENTOS:
+
+                * parent.replaceChild(para, child)
+
+        -   ACCESO AOS ATRIBUTOS:
+
+                * element.getAttribute(atributo)
+                * element.settAttribute(atributo, valor)
+-->
