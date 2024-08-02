@@ -40,7 +40,7 @@ console.log("cores[2]: " + cores[2]);
 console.log("cores[3]: " + cores[3]); // undefined
 
 /*  
-    3. Os Arrays en JavaScript son obxectos: 
+    3. Os arrays en JavaScript son obxectos: 
 */
 console.log(
     "\n3. Os Arrays en JavaScript son variables de tipo:",
@@ -48,7 +48,7 @@ console.log(
 );
 
 /*
-    4. Métodos dos obxectos Array en JavaScript:
+    4. Métodos dos obxectos array en JavaScript:
  */
 console.log("\n4. Métodos dos obxectos Array en JavaScript:");
 console.log(cores);
@@ -97,7 +97,7 @@ console.log("O azul atópase na posición:", novasCores.indexOf("azul"));
 console.log("O amarelo atópase na posición:", novasCores.indexOf("amarelo"));
 
 // 4.8 Método includes()
-// Obter todos os elementos dun array nun único string
+// Devolve un boolean indicando se o elemento está ou non no array.
 console.log("\n4.8 includes():");
 console.log("azul:", novasCores.includes("azul"));
 console.log("amarelo:", novasCores.includes("amarelo"));
@@ -185,23 +185,23 @@ some = numeros.some((num) => num % 7 === 0);
 console.log("Hai algún número múltiplo de 7?", some);
 
 // 4.17 Método find()
-// Devolve o primeiro elemento do array pasa a proba implementada pola función proporcionada.
+// Devolve o valor do primeiro elemento do array que cumple coa función.
 console.log("\n4.17 find():");
 let find = numeros.find((num) => num % 3 === 0);
-console.log("Primeiro número múltiplo de 2:", find);
+console.log("Primeiro número múltiplo de 3:", find);
 find = numeros.find((num) => num % 7 === 0);
 console.log("Primeiro número múltiplo de 7:", find);
 
 // 4.18 Método findIndex()
-// Devolve o primeiro elemento do array pasa a proba implementada pola función proporcionada.
+// Devolve o índice do primeiro elemento do array que cumple coa función.
 console.log("\n4.18 findIndex():");
 let findIndex = numeros.findIndex((num) => num % 3 === 0);
-console.log("Primeiro número múltiplo de 2:", findIndex);
+console.log("Primeiro número múltiplo de 3:", findIndex);
 findIndex = numeros.findIndex((num) => num % 7 === 0);
 console.log("Primeiro número múltiplo de 7:", findIndex);
 
 // 4.19 Método sort()
-// Ordena los elementos dun array e devolve ese mesmo array ordenado.
+// Ordena os elementos dun array e devolve ese mesmo array ordenado.
 // A ordenación por defecto corresponde coa posición do valor do string
 // dacordo ao seu valor Unicode
 console.log("\n4.19 sort():");
