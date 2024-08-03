@@ -12,7 +12,6 @@
 
     const gifts = ['tren', 'oso', 'pelota']
     const materials = 'tronesa'
-
     manufacture(gifts, materials) // ["tren", "oso"]
     // 'tren' SÍ porque sus letras están en 'tronesa'
     // 'oso' SÍ porque sus letras están en 'tronesa'
@@ -20,17 +19,21 @@
 
     const gifts = ['juego', 'puzzle']
     const materials = 'jlepuz'
-
     manufacture(gifts, materials) // ["puzzle"]
 
     const gifts = ['libro', 'ps5']
     const materials = 'psli'
-
     manufacture(gifts, materials) // []
 
 */
 
 function manufacture(gifts, materials) {
-    // Code here
-    return [];
+    return gifts.filter((gift) => {
+        const words = gift.split("");
+        return words.every((word) => materials.includes(word));
+    });
 }
+
+console.log(manufacture(["tren", "oso", "pelota"], "tronesa"));
+console.log(manufacture(["juego", "puzzle"], "jlepuz"));
+console.log(manufacture(["libro", "ps5"], "psli"));
