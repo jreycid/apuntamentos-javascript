@@ -127,3 +127,8 @@ console.log(acceso);
     
     Devolve o operando da dereita cando o da esquerda é null ou undefined
 */
+const foo = null ?? 'default string';
+console.log(foo);
+
+const baz = 0 ?? 42;
+console.log(baz);
