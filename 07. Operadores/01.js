@@ -2,13 +2,13 @@
 let a = 2;
 let b = 4;
 
-console.log('Operadores aritmeticos');
+console.log("Operadores aritmeticos");
 console.log(a + b);
 console.log(a - b);
 console.log(a * b);
 console.log(a / b);
-console.log(a % b);     // operador modulo
-console.log(a ** b);    // operador potencia
+console.log(a % b); // operador modulo
+console.log(a ** b); // operador potencia
 
 // INCREMENTOS E DECREMENTOS
 console.log(++a); // incrementa en un e despois amosao por consola
@@ -32,22 +32,22 @@ c **= 5;
 // OPERADORES DE COMPARACION -> devolven un tipo boolean
 let d = 5;
 
-console.log('Operadores de comparacion');
-console.log(d > 5);  // false
+console.log("Operadores de comparacion");
+console.log(d > 5); // false
 console.log(d >= 5); // true
-console.log(d < 5);  // false
+console.log(d < 5); // false
 console.log(d <= 5); // true
 
 console.log(d == 5); // true
 console.log(d != 5); // false
 
-console.log(d == '5'); // true, xa == solamente compara valores
-console.log(d === '5'); // false, xa === compara valores e tipo de dato
-console.log(d != '5'); // false
-console.log(d !== '5'); // true
+console.log(d == "5"); // true, xa == solamente compara valores
+console.log(d === "5"); // false, xa === compara valores e tipo de dato
+console.log(d != "5"); // false
+console.log(d !== "5"); // true
 
 // OPERADORES LÓXICOS
-console.log('Operadores loxicos');
+console.log("Operadores loxicos");
 console.log(true && true);
 console.log(true || false);
 console.log(!true);
@@ -74,7 +74,7 @@ if ("") {
     // Not reachable
 }
 
-if ('') {
+if ("") {
     // Not reachable
 }
 
@@ -86,7 +86,8 @@ if (-0) {
     // Not reachable
 }
 
-if (0n) {   // cero de tipo BigInt
+if (0n) {
+    // cero de tipo BigInt
     // Not reachable
 }
 
@@ -98,25 +99,31 @@ if (0n) {   // cero de tipo BigInt
     Polo tanto, o resto dos valores en JavaScript, que non son FALSY, son TRUTHLY.
  */
 
-    // OPERADORES BITWISE, operan a nivel de bit
-    //  0 -> 00000000
-    //  1 -> 00000001
-    //  2 -> 00000010
-    //  3 -> 00000011
-    //  4 -> 00000100
-    //  5 -> 00000101
-    //  6 -> 00000110
-    //  7 -> 00000111
-    console.log('Operadores bitwise');
-    console.log('1 | 4 =', 1 | 4);  // devolve 5 -> 00000101
-    console.log('3 | 5 =', 3 | 5);  // devolve 7 -> 00000111
+// OPERADORES BITWISE, operan a nivel de bit
+//  0 -> 00000000
+//  1 -> 00000001
+//  2 -> 00000010
+//  3 -> 00000011
+//  4 -> 00000100
+//  5 -> 00000101
+//  6 -> 00000110
+//  7 -> 00000111
+console.log("Operadores bitwise");
+console.log("1 | 4 =", 1 | 4); // devolve 5 -> 00000101
+console.log("3 | 5 =", 3 | 5); // devolve 7 -> 00000111
 
-    console.log('1 & 4 =', 1 & 4);  // devolve 5 -> 00000101
-    console.log('3 & 5 =', 3 & 5);  // devolve 7 -> 00000111
+console.log("1 & 4 =", 1 & 4); // devolve 5 -> 00000101
+console.log("3 & 5 =", 3 & 5); // devolve 7 -> 00000111
 
-    // OPERADOR TERNARIO -> expresion ? 'si é true' : 'si é false'
+// OPERADOR TERNARIO -> expresion ? 'si é true' : 'si é false'
 
-    console.log('Operador ternario');
-    let idade = 15;
-    let acceso = idade > 17 ? 'Permitir ingreso': 'Non permitir ingreso';
-    console.log(acceso);
+console.log("Operador ternario");
+let idade = 15;
+let acceso = idade > 17 ? "Permitir ingreso" : "Non permitir ingreso";
+console.log(acceso);
+
+/*
+    OPERADOR COALESCENCIA NULA
+    
+    Devolve o operando da dereita cando o da esquerda é null ou undefined
+*/
