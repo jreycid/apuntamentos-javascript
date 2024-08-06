@@ -34,7 +34,6 @@ function findNaughtyStep(original, modified) {
     if (original.length === modified.length) {
         return "";
     }
-
     let index = 0;
     for (index = 0; index < original.length; index++) {
         if (original[index] !== modified[index]) {
@@ -43,14 +42,10 @@ function findNaughtyStep(original, modified) {
                 : modified[index];
         }
     }
-
     return original[index] ?? modified[index];
 }
 
-console.log(findNaughtyStep("abcd", "abcde")); // 'e'
-
-console.log(findNaughtyStep("stepfor", "stepor")); // 'f'
-
-console.log(findNaughtyStep("abcde", "abcde")); // ''
-
-console.log(findNaughtyStep("xxxx", "xxoxx")); // 'o'
+console.log(findNaughtyStep("abcd", "abcde"));      // 'e'
+console.log(findNaughtyStep("stepfor", "stepor"));  // 'f'
+console.log(findNaughtyStep("abcde", "abcde"));     // ''
+console.log(findNaughtyStep("xxxx", "xxoxx"));      // 'o'
