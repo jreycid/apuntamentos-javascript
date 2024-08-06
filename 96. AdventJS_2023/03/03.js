@@ -45,7 +45,7 @@ function findNaughtyStep(original, modified) {
     return original[index] ?? modified[index];
 }
 
-console.log(findNaughtyStep("abcd", "abcde"));      // 'e'
-console.log(findNaughtyStep("stepfor", "stepor"));  // 'f'
-console.log(findNaughtyStep("abcde", "abcde"));     // ''
-console.log(findNaughtyStep("xxxx", "xxoxx"));      // 'o'
+console.log(findNaughtyStep("abcd", "abcde")); // 'e'
+console.log(findNaughtyStep("stepfor", "stepor")); // 'f'
+console.log(findNaughtyStep("abcde", "abcde")); // ''
+console.log(findNaughtyStep("xxxx", "xxoxx")); // 'o'
