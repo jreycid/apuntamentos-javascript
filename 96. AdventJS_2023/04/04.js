@@ -37,8 +37,8 @@ function decode(message) {
         const endIndex = message.indexOf(")", startIndex);
 
         const start = message.slice(0, startIndex);
-        const tmp = message.slice(startIndex + 1, endIndex);
-        const middle = [...tmp].reverse().join("");
+        const toReverse = message.slice(startIndex + 1, endIndex);
+        const middle = [...toReverse].reverse().join("");
         const end = message.slice(endIndex + 1, message.length);
 
         message = start + middle + end;
