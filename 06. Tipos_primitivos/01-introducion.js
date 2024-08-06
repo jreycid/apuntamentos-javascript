@@ -18,7 +18,7 @@
         polo que non ten métodos nin propiedades.
         As variables de calquera tipo primitivo son inmutables,
         é dicir, non se poden modificar. Cando a unha variable ou constante
-        de tipo primitivo que xa ten asignado un valor, se lle intenta 
+        de tipo primitivo que xa ten asignado un valor, se lle intenta
         asignar outro valor, o que fai javascript é crear unha nova instancia da variable.
             
         En Javascript, toda variable ou constante que non pertence a un tipo primitivo,
@@ -64,17 +64,19 @@ console.log(saudo.toUpperCase());
  */
 
 // O uso dun método de cadena non modifica a cadena
-let cadea = "cadea";
-console.log(cadea); // cadea
-cadea.toUpperCase();
-console.log(cadea); // cadea
+let texto = "javascript";
+console.log(texto); // texto
+texto.toUpperCase();
+console.log(texto); // texto
 
-// A asignación dalle o primitivo un novo valor (non o muta)
-cadea = cadea.toUpperCase();
-console.log(cadea); // CADEA
+// A asignación dalle á variable un novo valor (non a muta)
+// Isto significa que a cadea orixinal "javascript" aínda existe na memoria,
+// pero a variable texto agora fai referencia á nova cadea "JAVASCRIPT".
+texto = texto.toUpperCase();
+console.log(texto); // JAVASCRIPT
 
 // O uso dun método de array muta o array
 let arreglo = [];
 console.log(arreglo); // []
-arreglo.push("cadea");
-console.log(arreglo); // ["cadea"]
+arreglo.push("javascript");
+console.log(arreglo); // ["javascript"]
