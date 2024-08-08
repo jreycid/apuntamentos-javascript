@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Eventos</title>
+        <style>
+            code {
+                background-color: #eee;
+                border-radius: 3px;
+                font-family: courier, monospace;
+                padding: 0 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Eventos</h2>
+        <p>
+            Os eventos son cousas que suceden no sistema que se está a
+            programar. <br />
+            O sistema encárgase de producir unha sinal que conleva á execución
+            automática de certo código cando se produce un evento.
+        </p>
+        <p>Os eventos engádense con <b>addEventListener:</b></p>
+        <pre>
+            <code>elemento_que_escoita.<b>addEventListener</b>('evento', funcion_a_executar);</code>
+        </pre>
+        <p>e elimínanse con <b>removeEventListener:</b></p>
+        <pre>
+            <code>elemento_que_escoita.<b>removeEventListener</b>('evento', funcion_a_eliminar);</code>
+        </pre>
+        <h2>Tipos de eventos</h2>
+        <ul>
+            <li>Eventos do rato</li>
+            <li>Eventos do teclado</li>
+            <li>Eventos táctiles</li>
+            <li>Eventos de formulario</li>
+            <li>Eventos de ventana</li>
+            <li>Eventos propios</li>
+        </ul>
+        <h2>Táboa de Eventos</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Evento</th>
+                    <th>Descrición</th>
+                    <th>Elementos para os que está definido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>onblur</code></td>
+                    <td>Un elemento perde o foco</td>
+                    <td>
+                        <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>,
+                        <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>,
+                        <code>&lt;textarea&gt;</code>, <code>&lt;body&gt;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>onchange</code></td>
+                    <td>Un elemento foi modificado</td>
+                    <td>
+                        <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>,
+                        <code>&lt;textarea&gt;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>onclick</code></td>
+                    <td>Pulsar e soltar o rato</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>ondblclick</code></td>
+                    <td>Pulsar dúas veces seguidas co rato</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onfocus</code></td>
+                    <td>Un elemento obtén o foco</td>
+                    <td>
+                        <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>,
+                        <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>,
+                        <code>&lt;textarea&gt;</code>, <code>&lt;body&gt;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>onkeydown</code></td>
+                    <td>Pulsar unha tecla e non soltarla</td>
+                    <td>Elementos de formulario e <code>&lt;body&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onkeypress</code></td>
+                    <td>Pulsar unha tecla</td>
+                    <td>Elementos de formulario e <code>&lt;body&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onkeyup</code></td>
+                    <td>Soltar unha tecla pulsada</td>
+                    <td>Elementos de formulario e <code>&lt;body&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onload</code></td>
+                    <td>Páxina cargada completamente</td>
+                    <td><code>&lt;body&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onmousedown</code></td>
+                    <td>Pulsar un botón do rato e non soltalo</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onmousemove</code></td>
+                    <td>Mover o rato</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onmouseout</code></td>
+                    <td>El rato "sale" do elemento</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onmouseover</code></td>
+                    <td>O rato "entra" no elemento</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onmouseup</code></td>
+                    <td>Soltar o botón do rato</td>
+                    <td>Todos os elementos</td>
+                </tr>
+                <tr>
+                    <td><code>onreset</code></td>
+                    <td>Inicializar o formulario</td>
+                    <td><code>&lt;form&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onresize</code></td>
+                    <td>Modificar o tamaño da ventana</td>
+                    <td><code>&lt;body&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onselect</code></td>
+                    <td>Seleccionar un texto</td>
+                    <td>
+                        <code>&lt;input&gt;</code>,
+                        <code>&lt;textarea&gt;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>onsubmit</code></td>
+                    <td>Enviar o formulario</td>
+                    <td><code>&lt;form&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>onunload</code></td>
+                    <td>
+                        Abandónase a páxina, por exemplo o cerrar o
+                        navegador
+                    </td>
+                    <td><code>&lt;body&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
