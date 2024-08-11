@@ -39,17 +39,11 @@
 */
 
 function maxDistance(movements) {
-    let left = 0;
-    let right = 0;
+    let distance = 0;
     let ace = 0;
-    let result = 0;
 
-    for (move of movements)
-        move === "<" ? left++ : move === ">" ? right++ : ace++;
+    for (const move of movements)
+        move === ">" ? distance++ : move === "<" ? distance-- : ace++;
 
-    right > left
-        ? (result = right + ace - left)
-        : (result = left + ace - right);
-
-    return result;
+    return Math.abs(distance) + ace;
 }
