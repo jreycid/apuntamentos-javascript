@@ -1,17 +1,20 @@
 /*
- * EXERCICIO:
- * - Mostra exemplos de asignación de variables por valor e por referencia,
- *   dependendo do tipo de dato.
- * - Mostra exemplos de funcións con variables que se pasan por valor e
- *  por referencia, e como se comportan en cada caso cando se modifican.
+ * EJERCICIO:
+ * - Muestra ejemplos de asignación de variables "por valor" y "por referencia", según
+ *   su tipo de dato.
+ * - Muestra ejemplos de funciones con variables que se les pasan "por valor" y 
+ *   "por referencia", y cómo se comportan en cada caso en el momento de ser modificadas.
+ * (Entender estos conceptos es algo esencial en la gran mayoría de lenguajes)
  *
- * DIFICULTADE EXTRA (opcional):
- * Crear dous programas que reciban cada un dous parámetros:
- * - Un programa recibe os parámetros por valor.
- * - O outro programa recibe os parámetros por referencia.
- * Os programas intercambian o valor dos parámetros recibidos.
- * Imprimir os valores das variables antes e despois das chamadas.
- * Explicar os resultados obtidos.
+ * DIFICULTAD EXTRA (opcional):
+ * Crea dos programas que reciban dos parámetros (cada uno) definidos como
+ * variables anteriormente.
+ * - Cada programa recibe, en un caso, dos parámetros por valor, y en otro caso, por referencia.
+ *   Estos parámetros los intercambia entre ellos en su interior, los retorna, y su retorno
+ *   se asigna a dos variables diferentes a las originales. A continuación, imprime
+ *   el valor de las variables originales y las nuevas, comprobando que se ha invertido
+ *   su valor en las segundas.
+ *   Comprueba también que se ha conservado el valor original en las primeras.
  */
 
 /*

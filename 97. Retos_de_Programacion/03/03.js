@@ -1,17 +1,19 @@
 /*
- * EXERCICIO:
- * - Mostra exemplos de creación de todas as estruturas admitidas por defecto en JS.
- * - Usa operacións de inserción, eliminación, actualización e ordenación.
+ * EJERCICIO:
+ * - Muestra ejemplos de creación de todas las estructuras soportadas por defecto
+ *   en tu lenguaje.
+ * - Utiliza operaciones de inserción, borrado, actualización y ordenación.
  *
- * DIFICULTADE EXTRA (opcional):
- * Crea unha axenda de contactos por terminal.
- * - Debes implementar funcións de busca, inserción, actualización e eliminación de contactos.
- * - Cada contacto debe ter un nome e un número de teléfono.
- * - O programa pregunta primeiro que operación quere realizar, e despois
- *   os datos necesarios para levala a cabo.
- * - O programa non pode permitirche introducir números de teléfono non numéricos con máis de 11 díxitos.
- *   (ou o número de díxitos que queiras)
- * - Tamén se debe propoñer unha operación de terminación do programa.
+ * DIFICULTAD EXTRA (opcional):
+ * Crea una agenda de contactos por terminal.
+ * - Debes implementar funcionalidades de búsqueda, inserción, actualización
+ *   y eliminación de contactos.
+ * - Cada contacto debe tener un nombre y un número de teléfono.
+ * - El programa solicita en primer lugar cuál es la operación que se quiere realizar,
+ *   y a continuación los datos necesarios para llevarla a cabo.
+ * - El programa no puede dejar introducir números de teléfono no númericos y con más
+ *   de 11 dígitos (o el número de dígitos que quieras).
+ * - También se debe proponer una operación de finalización del programa.
  */
 
 /*

@@ -1,14 +1,14 @@
 /*
- * EXERCICIO:
- * Mostra exemplos de todas as operacións que se poden realizar con cadeas de caracteres en JS.
- * Algunhas desas operacións poden ser (buscar tantas como poidas):
- * - Acceso a caracteres específicos, subcadeas, lonxitude, concatenación, repetición,
- *   percorrido, conversión a maiúsculas e minúsculas, substitución, división, unión,
+ * EJERCICIO:
+ * Muestra ejemplos de todas las operaciones que puedes realizar con cadenas de caracteres
+ * en tu lenguaje. Algunas de esas operaciones podrían ser (busca todas las que puedas):
+ * - Acceso a caracteres específicos, subcadenas, longitud, concatenación, repetición,
+ *   recorrido, conversión a mayúsculas y minúsculas, reemplazo, división, unión,
  *   interpolación, verificación...
  *
- * DIFICULTADE EXTRA (opcional):
- * Crear un programa que analice dúas palabras diferentes e realice comprobacións
- * para saber se son:
+ * DIFICULTAD EXTRA (opcional):
+ * Crea un programa que analice dos palabras diferentes y realice comprobaciones
+ * para descubrir si son:
  * - Palíndromos
  * - Anagramas
  * - Isogramas
